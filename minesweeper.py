@@ -9,11 +9,9 @@
 
 # Define a function that receives input from a 2D list and assess the number
 #   of mines surrounding the dashes.
-
 def mine_Sweeper(mine_field):
 
-    # Search every element for a "-" in the grid and replace with adj mines count.
-   
+    # Search every element for a "-" in the grid and replace with adj mines count. 
     print("\n\t\t\t*** Number of adjacent Mines: ***\n")
     
     for row, line in enumerate(mine_field, 0):
@@ -90,7 +88,6 @@ print()
 
 
 # Create 2D list/grid.
-
 mine_field = [ ['#', '-', '#', '-', '#', '#', '-', '-', '#', '-'],
                ['-', '-', '-', '#', '-', '-', '-', '#', '-', '#'],
                ['#', '-', '#', '-', '#', '-', '#', '#', '-', '-'],
@@ -104,7 +101,6 @@ mine_field = [ ['#', '-', '#', '-', '#', '#', '-', '-', '#', '-'],
 
 
 # Call mine_Sweeper function with the list as input.
-
 mine_Sweeper(mine_field)
 
 print()
